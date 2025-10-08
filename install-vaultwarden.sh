@@ -1,4 +1,6 @@
+#Author:Jaime 
 #!/bin/bash
+
 set -e
 
 echo "=============================================="
@@ -65,8 +67,11 @@ SSL_CITY=${SSL_CITY:-Toledo}
 read -rp "🏢 Organization (default INTRANET): " SSL_ORG
 SSL_ORG=${SSL_ORG:-INTRANET}
 
-read -rp "🌐 Common Name / Domain (default localhost): " SSL_CN
-SSL_CN=${SSL_CN:-localhost}
+# Capture The main IP of the system
+SSL_CN=$(ip -4 route get 1.1.1.1 2>/dev/null | awk '{for(i=1;i<=NF;i++) if($i=="src") print $(i+1)}')
+
+# And main IP saves in the variable SSL_CN 
+echo " 🌐 Common Name / Domain: $SSL_CN"
 
 SSL_DIR="$VAULT_DIR/ssl"
 NGINX_CONF="$VAULT_DIR/nginx.conf"
