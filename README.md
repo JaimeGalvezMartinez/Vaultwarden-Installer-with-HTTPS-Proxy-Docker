@@ -1,4 +1,4 @@
-# Vaultwarden-Installer-with-HTTPS-Proxy-Docker-
+# Vaultwarden-Installer-with-HTTPS-Proxy-Docker
 A simple Bash installer that automatically sets up [Vaultwarden](https://github.com/dani-garcia/vaultwarden) (the lightweight Bitwarden-compatible password manager) using **Docker**, **Nginx**, and **self-signed HTTPS certificates**.
 
 ---
@@ -34,11 +34,11 @@ sudo ./install-vaultwarden.sh
 During installation, you’ll be prompted for:
 
 Setting	Description	Default
-Installation folder	          Directory where Vaultwarden and Nginx files are stored	       ~/vaultwarden-docker
-Internal HTTP port	          Port inside the Vaultwarden container	                          80
-Host HTTP port	Port          exposed for HTTP access	                                        8081
-Host HTTPS port	Port          exposed for HTTPS access	                                      8445
-Admin token	Password for the admin panel	                                                    supersecret
+Installation folder	          Directory where Vaultwarden and Nginx files are stored	       ~/vaultwarden-docker  (You can Modified This)
+Internal HTTP port	          Port inside the Vaultwarden container	                          80    (If you Modified This. You Can explore problems in the configuration))
+Host HTTP port	Port          exposed for HTTP access	                                        8081  (You can Modified This)
+Host HTTPS port	Port          exposed for HTTPS access	                                      8445  (You can Modified This)
+Admin token	Password for the admin panel	                                                    supersecret  (You can Modified This)
 
 
 🌐 Accessing Your Vaultwarden
