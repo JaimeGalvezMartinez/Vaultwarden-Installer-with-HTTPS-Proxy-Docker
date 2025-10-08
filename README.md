@@ -15,7 +15,7 @@ A simple Bash installer that automatically sets up [Vaultwarden](https://github.
 
 ## 🧰 Requirements
 
-- Ubuntu or Debian-based system  
+- Ubuntu or Debian-based system  (Ubuntu 18.04, 20.04, 22.04, debian 12 server etc...)
 - `bash`, `curl`, and `openssl`  
 - Root or `sudo` privileges (required for Docker installation)
 
