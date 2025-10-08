@@ -61,7 +61,7 @@ generate_certificate() {
     openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
         -keyout "$SSL_DIR/selfsigned.key" \
         -out "$SSL_DIR/selfsigned.crt" \
-        -subj "/C=US/ST=CA/L=Local/O=Vaultwarden/CN=localhost"
+        -subj "/C=ES/ST=Castilla-La Mancha/L=Toledo/O=Vaultwarden/CN=Intranet"
 }
 
 create_nginx_conf() {
