@@ -36,7 +36,7 @@ During installation, you’ll be prompted for:
 | Setting | Description | Default | Notes |
 |----------|--------------|----------|--------|
 | **Installation folder** | Directory where Vaultwarden and Nginx files are stored | `~/vaultwarden-docker` | ✅ You can modify this |
-| **Internal HTTP port** | Port inside the Vaultwarden container | `80` | ⚠️ Modifying this may cause configuration issues |
+| **Internal HTTP port** | Port inside the Vaultwarden container | `80` | ⚠️ Modifying this may cause configuration problems |
 | **Host HTTP port** | Port exposed for HTTP access | `8081` | ✅ You can modify this |
 | **Host HTTPS port** | Port exposed for HTTPS access | `8445` | ✅ You can modify this |
 | **Admin token** | Password for the admin panel | `supersecret` | ✅ You can modify this |
