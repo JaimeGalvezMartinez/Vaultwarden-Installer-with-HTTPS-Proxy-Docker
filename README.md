@@ -33,8 +33,6 @@ sudo ./install-vaultwarden.sh
 ```
 During installation, you’ll be prompted for:
 
-During installation, you’ll be prompted for:
-
 | Setting | Description | Default | Notes |
 |----------|--------------|----------|--------|
 | **Installation folder** | Directory where Vaultwarden and Nginx files are stored | `~/vaultwarden-docker` | ✅ You can modify this |
