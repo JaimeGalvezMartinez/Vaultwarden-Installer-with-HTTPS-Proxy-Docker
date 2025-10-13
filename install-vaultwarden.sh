@@ -21,10 +21,20 @@ HTTP_PORT_HOST=${HTTP_PORT_HOST:-8081}
 read -rp "🔒 HTTPS host port to expose (default 8445): " HTTPS_PORT
 HTTPS_PORT=${HTTPS_PORT:-8445}
 
-# === CHECK DEPENDENCIES ===
-command -v openssl >/dev/null 2>&1 || { echo " ⚠️ OpenSSL is required but not installed."; }
+# Check for OpenSSL
+command -v openssl >/dev/null 2>&1 || {
+  echo "⚠️ OpenSSL not found. Installing..."
+  sudo apt update && sudo apt install -y openssl
+}
 
+# Update and upgrade packages
+sudo apt update && sudo apt upgrade -y
+
+# Ensure vault directory exists
 mkdir -p "$VAULT_DIR"
+
+echo "✅ OpenSSL installed and vault directory ready at: $VAULT_DIR"
+
 
 # === TOKEN GENERATION ===
 generate_token() {
