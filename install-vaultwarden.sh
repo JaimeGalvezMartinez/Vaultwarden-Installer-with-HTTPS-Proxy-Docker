@@ -65,8 +65,8 @@ done
 # === SSL METADATA INPUT ===
 echo ""
 echo "🔧 SSL Certificate Metadata (press Enter to use defaults):"
-read -rp "🌍 Country Code (default Spain): " SSL_COUNTRY
-SSL_COUNTRY=${SSL_COUNTRY:-Spain}
+read -rp "🌍 Country Code (default ES): " SSL_COUNTRY
+SSL_COUNTRY=${SSL_COUNTRY:-ES}
 
 read -rp "🏙️  State or Province (default State): " SSL_STATE
 SSL_STATE=${SSL_STATE:-Castilla-La Mancha}
