@@ -22,7 +22,7 @@ read -rp "🔒 HTTPS host port to expose (default 8445): " HTTPS_PORT
 HTTPS_PORT=${HTTPS_PORT:-8445}
 
 # === CHECK DEPENDENCIES ===
-command -v openssl >/dev/null 2>&1 || { echo "❌ OpenSSL is required but not installed."; exit 1; }
+command -v openssl >/dev/null 2>&1 || { echo " ⚠️ OpenSSL is required but not installed."; }
 
 mkdir -p "$VAULT_DIR"
 
