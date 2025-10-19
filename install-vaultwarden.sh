@@ -21,6 +21,13 @@ HTTP_PORT_HOST=${HTTP_PORT_HOST:-8081}
 read -rp "🔒 HTTPS host port to expose (default 8445): " HTTPS_PORT
 HTTPS_PORT=${HTTPS_PORT:-8445}
 
+if lsof -i :"$HTTPS_PORT" &>/dev/null; then
+  echo "⚠️  Port $HTTPS_PORT is already in used."
+else
+  echo "✅ Port $HTTPS_PORT is available."
+fi
+
+
 # Check for OpenSSL
 command -v openssl >/dev/null 2>&1 || {
   echo "⚠️ OpenSSL not found. Installing..."
