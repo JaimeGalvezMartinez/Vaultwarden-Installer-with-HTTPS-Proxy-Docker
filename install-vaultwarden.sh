@@ -1,4 +1,4 @@
-#Author:Jaime 
+#Author:Jaime Galvez Martinez
 #!/bin/bash
 
 set -e
@@ -6,7 +6,10 @@ set -e
 echo "=============================================="
 echo "🚀 Vaultwarden Installer with HTTPS Proxy"
 echo "=============================================="
-echo ""
+echo "=============================================="
+echo " Author: Jaime Galvez Martinez "
+echo "=============================================="
+wcho ""
 
 # === USER INPUT ===
 read -rp "📁 Installation folder (default ~/vaultwarden-docker): " VAULT_DIR
