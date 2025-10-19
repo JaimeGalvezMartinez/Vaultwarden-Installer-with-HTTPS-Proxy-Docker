@@ -1,4 +1,6 @@
 #Author:Jaime Galvez Martinez
+#Date: 19/10/2025
+
 #!/bin/bash
 
 set -e
