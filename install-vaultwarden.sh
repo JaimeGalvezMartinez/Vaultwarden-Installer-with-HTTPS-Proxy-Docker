@@ -50,8 +50,8 @@ echo "✅ OpenSSL installed and vault directory ready at: $VAULT_DIR"
 
 # === TOKEN GENERATION ===
 generate_token() {
-  # Generates a secure 12-character token (alphanumeric + symbols)
-  openssl rand -base64 9 | tr -dc 'A-Za-z0-9@#%&_+=' | head -c 12
+  # Generates a secure 8-character token (alphanumeric + symbols)
+  openssl rand -base64 9 | tr -dc 'A-Za-z0-9@#%&_+=' | head -c 8
 }
 
 while true; do
