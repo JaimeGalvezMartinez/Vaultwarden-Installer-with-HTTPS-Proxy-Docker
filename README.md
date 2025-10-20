@@ -46,7 +46,7 @@ During installation, you’ll be prompted for:
 
 Once setup completes:
 
-🔒 Vaultwarden (HTTPS):      https://xx.xx.xx.xx:8445
+🔒 Vaultwarden (HTTPS):      https://xx.xx.xx.xx:8445              (xx.xx.xx.xx is an valid ip: Example:192.168.1.2 or 172.32.0.2)
 
 
 🗝️ Configuration Files
