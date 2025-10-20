@@ -1,5 +1,6 @@
 #Author:Jaime Galvez Martinez
-#Date: 19/10/2025
+# github: github.com/JaimeGalvezMartinez
+#Date: october 2025
 
 #!/bin/bash
 
@@ -10,6 +11,7 @@ echo "🚀 Vaultwarden Installer with HTTPS Proxy"
 echo "=============================================="
 echo "=============================================="
 echo " Author: Jaime Galvez Martinez "
+echo " github.com/JaimeGalvezMartinez"
 echo "=============================================="
 wcho ""
 
