@@ -13,7 +13,7 @@ echo "=============================================="
 echo " Author: Jaime Galvez Martinez "
 echo " github.com/JaimeGalvezMartinez"
 echo "=============================================="
-echo ""
+echo "A simple Bash installer that automatically sets up Vaultwarden (the lightweight Bitwarden-compatible password manager) using Docker, Nginx Proxy, and self-signed HTTPS certificates."
 
 # === USER INPUT ===
 read -rp "📁 Installation folder (default ~/vaultwarden-docker): " VAULT_DIR
