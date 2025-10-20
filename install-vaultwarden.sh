@@ -13,7 +13,7 @@ echo "=============================================="
 echo " Author: Jaime Galvez Martinez "
 echo " github.com/JaimeGalvezMartinez"
 echo "=============================================="
-wcho ""
+echo ""
 
 # === USER INPUT ===
 read -rp "📁 Installation folder (default ~/vaultwarden-docker): " VAULT_DIR
